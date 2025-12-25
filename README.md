@@ -6,10 +6,11 @@ Basically you just clone the entire source repo for the library/framework as a g
 
 This project has this setup for:
 
-- svelte & sveltekit
 - effect.ts
-- neverthrow
 - opencode
+- opentui
+- solidjs
+- tanstack router
 
 ## getting started
 
@@ -17,8 +18,6 @@ This project has this setup for:
 2. copy paste the following command into opencode (while it's open in your home directory)
 
 And now you have slash commands for these libraries/frameworks in opencode and cursor. as well as a special agent in opencode that can search the codebase for the answer to a question.
-
-_I also included the color theme I like ported to opencode as well lol_
 
 ````md
 # Init Command
@@ -37,28 +36,12 @@ Create the OpenCode directories if they don't exist and copy all files from @OPE
 # Create directories if they don't exist
 mkdir -p ~/.config/opencode/agent
 mkdir -p ~/.config/opencode/command
-mkdir -p ~/.config/opencode/themes
 
 # Copy agent files
 cp -u ./.better-coding-agents/OPENCODE_ASSETS/agent/*.md ~/.config/opencode/agent/
 
 # Copy command files
 cp -u ./.better-coding-agents/OPENCODE_ASSETS/command/*.md ~/.config/opencode/command/
-
-# Copy theme files
-cp -u ./.better-coding-agents/OPENCODE_ASSETS/themes/*.json ~/.config/opencode/themes/
-```
-
-### 2. Setup Cursor Configuration
-
-Create the Cursor commands directory if it doesn't exist and copy all files from @CURSOR_ASSETS/commands/:
-
-```bash
-# Create directory if it doesn't exist
-mkdir -p ~/.cursor/commands
-
-# Copy cursor command files
-cp -u ./.better-coding-agents/CURSOR_ASSETS/commands/*.md ~/.cursor/commands/
 ```
 
 ## Notes
